@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu & Rules - Afrika's Tapas</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Afrika's Tapas</div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html" class="active">Menu & Rules</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Our Menu</h1>
+        <p>Low & slow. Wood-fired. No shortcuts.</p>
+    </div>
+
+    <!-- The Rules -->
+    <section class="rules">
+        <h2 class="section-title">The Rules</h2>
+        <div class="rules-list">
+            <div class="rule-item">
+                <h3>🔥</h3>
+                <h3>When it's gone, it's gone</h3>
+                <p>Our meats are prepared in limited batches. First come, first served.</p>
+            </div>
+            <div class="rule-item">
+                <h3>⏰</h3>
+                <h3>No rush orders</h3>
+                <p>Quality takes time. We don't cut corners.</p>
+            </div>
+            <div class="rule-item">
+                <h3>🪵</h3>
+                <h3>Smoke takes time, Respect the fire</h3>
+                <p>12-16 hours of patience in every bite.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section style="background: var(--light-bg);">
+        <h2 class="section-title">Our Meats</h2>
+        <p style="text-align: center; font-style: italic; margin-bottom: 3rem; font-size: 1.1rem;">
+            All meats come sliced for easier consumption
+        </p>
+
+        <div class="menu-categories">
+            <div class="menu-category">
+                <h3>🥩 Beef</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Smoked Brisket</h4>
+                        <p>12–16 hour smoke, salt & pepper crust</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Beef Short Ribs</h4>
+                        <p>Thick-cut, sticky bark, deep smoke</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Smoked Chuck Roast</h4>
+                        <p>Pulled or sliced, rich and juicy</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Smoked Oxtail</h4>
+                        <p>Fall-off-the-bone, smoked then braised</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Smoked Beef Sausage (Boerewors-style)</h4>
+                        <p>Coarse grind, fire-kissed</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🐷 Pork</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Smoked Pork Ribs</h4>
+                        <p>Dry-rubbed, glazed optional</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Smoked Pork Belly</h4>
+                        <p>Crispy edges, melt-in-mouth centre</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Pulled Pork</h4>
+                        <p>Vinegar bite, deep smoke</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Smoked Pork Sausage</h4>
+                        <p>Juicy, snappy casing</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🐑 Lamb & Goat</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Smoked Lamb Ribs</h4>
+                        <p>Fat-forward, herb rub</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Smoked Lamb Shoulder</h4>
+                        <p>Pulled, bold, smoky</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Smoked Goat Leg / Ribs</h4>
+                        <p>Earthy, slow-smoked, unapologetic</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🍗 Chicken</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Smoked Whole Chicken (split)</h4>
+                        <p>Herb-brined, skin-on</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Smoked Chicken Thighs</h4>
+                        <p>Juicy, forgiving, crowd favourite</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Smoked Chicken Wings</h4>
+                        <p>Finished hot or sticky</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🐟 Fish & Sea</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Smoked Snoek (seasonal)</h4>
+                        <p>South African classic</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Smoked Kingklip / Hake</h4>
+                        <p>Clean smoke, lemon finish</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Smoked Prawns</h4>
+                        <p>Shell-on, chilli butter</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Smoked Oysters (on availability)</h4>
+                        <p>Shell-on, flavoured to your taste</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🌱 Smoked Vegetarian Options</h3>
+                <p style="font-style: italic; margin-bottom: 1rem;">(Yes, still smoke)</p>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Smoked Mushrooms</h4>
+                        <p>Meaty, umami</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Smoked Cauliflower</h4>
+                        <p>Charred, spiced</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Smoked Halloumi / Tofu</h4>
+                        <p>Firm, salty, fire-ready</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🥘 Sides</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Pap & Smoky Tomato Relish</h4>
+                        <p>Traditional maize meal with fire-roasted relish</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Chakalaka</h4>
+                        <p>Spicy vegetable relish</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Samp & Beans</h4>
+                        <p>Hearty, traditional</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Coleslaw (vinegar-based)</h4>
+                        <p>Crisp, tangy, refreshing</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Roasted Sweet Potato</h4>
+                        <p>Caramelized, smoky</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Grilled Corn</h4>
+                        <p>Charred perfection</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Atchar Potato Salad</h4>
+                        <p>Spiced, South African style</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Smoked Baked Beans</h4>
+                        <p>Sweet, smoky, slow-cooked</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🌶️ House Sauces</h3>
+                <p style="font-style: italic; margin-bottom: 1rem;">(Optional — meat stands alone)</p>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Smoked Peri-Peri Sauce</h4>
+                        <p>Fiery, smoky, traditional</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>AT House Chilli Sauce</h4>
+                        <p>Balanced heat, complex flavour</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Afrika's BBQ Sauce</h4>
+                        <p>Sweet, tangy, signature blend</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Amarula BBQ Sauce</h4>
+                        <p>Creamy, uniquely African</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Pickled Onions & Chilli Sauce</h4>
+                        <p>Sharp, spicy, cutting</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🍰 Desserts</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Malva Pudding</h4>
+                        <p>Traditional sweet sponge, caramel sauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Grilled Pineapple</h4>
+                        <p>Caramelized, smoky finish</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Koeksister Bites</h4>
+                        <p>Sweet, syrupy, twisted perfection</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Amarula Cheesecake</h4>
+                        <p>Creamy, African liqueur infused</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: white; text-align: center;">
+        <h2 class="section-title">Serving Options</h2>
+        <div class="intro-features">
+            <div class="feature">
+                <h3>By the Plate</h3>
+                <p>Individual servings, perfectly portioned</p>
+            </div>
+            <div class="feature">
+                <h3>By the Weight</h3>
+                <p>Choose your quantity, we'll smoke it right</p>
+            </div>
+            <div class="feature">
+                <h3>AT Mixed Smoke Tray</h3>
+                <p>Chef's choice selection, best of everything</p>
+            </div>
+            <div class="feature">
+                <h3>Family / Crew Feast</h3>
+                <p>Large tables, shared experiences</p>
+            </div>
+        </div>
+        <a href="contact.html" class="cta-button" style="margin-top: 2rem;">Order Now</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Afrika's Tapas</h3>
+                <p>Smoked Slow, Served with Soul</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <p>@AfrikasTapas on all platforms</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Afrika's Tapas. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
