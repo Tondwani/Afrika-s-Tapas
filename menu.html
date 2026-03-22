@@ -13,52 +13,52 @@
             theme: {
                 extend: {
                     colors: {
-                        "surface-container-high": "#2a2a2a",
+                        "surface-container-high": "#183018",
                         "tertiary": "#aecfae",
-                        "on-primary-fixed": "#002100",
+                        "on-primary-fixed": "#ffffff",
                         "on-secondary-fixed": "#002108",
                         "tertiary-fixed": "#caebc9",
                         "outline-variant": "#384338",
                         "tertiary-container": "#82a283",
                         "on-tertiary": "#1a361f",
                         "secondary": "#a3d2a4",
-                        "surface-container": "#201f1f",
+                        "surface-container": "#122512",
                         "on-tertiary-fixed-variant": "#314d34",
                         "on-tertiary-fixed": "#04210c",
                         "on-error-container": "#ffdad6",
                         "on-surface-variant": "#c1dcc1",
                         "on-primary-fixed-variant": "#347500",
-                        "inverse-primary": "#479900",
+                        "inverse-primary": "#81c784",
                         "secondary-fixed-dim": "#a3d2a4",
                         "on-secondary": "#0c3817",
-                        "surface-tint": "#CCFF00",
+                        "surface-tint": "#5cb85c",
                         "on-secondary-container": "#95c496",
-                        "surface": "#131313",
-                        "primary-container": "#2D3300",
-                        "surface-bright": "#393939",
+                        "surface": "#0c1f0c",
+                        "primary-container": "#2d7d32",
+                        "surface-bright": "#234523",
                         "primary-fixed": "#f2ffc8",
-                        "surface-variant": "#343534",
+                        "surface-variant": "#1e3d1e",
                         "secondary-fixed": "#beefbe",
-                        "surface-container-lowest": "#0e0e0e",
+                        "surface-container-lowest": "#080f08",
                         "on-secondary-fixed-variant": "#254f2c",
-                        "surface-container-low": "#1c1b1b",
+                        "surface-container-low": "#0f280f",
                         "tertiary-fixed-dim": "#aecfae",
                         "on-background": "#e5e2e1",
                         "inverse-on-surface": "#313030",
                         "error-container": "#93000a",
                         "error": "#ffb4ab",
-                        "on-primary-container": "#CCFF00",
+                        "on-primary-container": "#e8f5e9",
                         "outline": "#8ca47f",
-                        "on-primary": "#003300",
+                        "on-primary": "#ffffff",
                         "on-tertiary-container": "#1c3821",
-                        "primary": "#CCFF00",
+                        "primary": "#5cb85c",
                         "inverse-surface": "#e5e2e1",
-                        "surface-container-highest": "#353534",
-                        "surface-dim": "#131313",
+                        "surface-container-highest": "#1e3d1e",
+                        "surface-dim": "#0c1f0c",
                         "secondary-container": "#27522e",
-                        "background": "#131313",
+                        "background": "#0c1f0c",
                         "on-error": "#690005",
-                        "primary-fixed-dim": "#CCFF00",
+                        "primary-fixed-dim": "#5cb85c",
                         "on-surface": "#e5e2e1"
                     },
                     fontFamily: {
@@ -76,14 +76,14 @@
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
         .ember-glow {
-            background: radial-gradient(circle at center, rgba(204, 255, 0, 0.12) 0%, transparent 70%);
+            background: radial-gradient(circle at center, rgba(92, 184, 92, 0.12) 0%, transparent 70%);
         }
         .smoke-overlay {
-            background: linear-gradient(to bottom, transparent, rgba(19, 19, 19, 0.8));
+            background: linear-gradient(to bottom, transparent, rgba(12, 31, 12, 0.8));
             backdrop-filter: contrast(110%) brightness(90%);
         }
         .neon-glow-text {
-            text-shadow: 0 0 15px rgba(204, 255, 0, 0.4);
+            text-shadow: 0 0 15px rgba(92, 184, 92, 0.4);
         }
         .no-scrollbar::-webkit-scrollbar {
             display: none;
@@ -96,19 +96,22 @@
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
 <!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-[#131313]/90 backdrop-blur-xl border-b border-white/5 dark:border-white/5 shadow-2xl shadow-[#131313]/50">
+<nav class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-[#0c1f0c]/90 backdrop-blur-xl border-b border-white/5 dark:border-white/5 shadow-2xl shadow-[#0c1f0c]/50">
 <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
-<div class="text-2xl font-black tracking-tighter text-primary dark:text-primary font-['Space_Grotesk'] neon-glow-text">
+<a class="text-2xl font-black tracking-tighter text-primary dark:text-primary font-['Space_Grotesk'] uppercase neon-glow-text" href="index.html">
+<img alt="Afrika's Tapas Logo" class="h-8 inline-block mr-2 brightness-150 saturate-200" src="2.png"/>
             Afrika's Tapas
-        </div>
+        </a>
 <div class="hidden md:flex space-x-8 items-center font-['Space_Grotesk'] font-bold tracking-tight uppercase">
-<a class="text-[#aecfae] dark:text-[#aecfae] hover:text-primary transition-colors duration-300" href="#">Today's Drop</a>
-<a class="text-primary border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-300" href="#">Menu</a>
-<a class="text-[#aecfae] dark:text-[#aecfae] hover:text-primary transition-colors duration-300" href="#">The Story</a>
+<a class="text-[#aecfae] dark:text-[#aecfae] hover:text-primary transition-colors duration-300" href="index.html">About Us</a>
+<a class="text-primary border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-300" href="menu.html">Menu</a>
+<a class="text-[#aecfae] dark:text-[#aecfae] hover:text-primary transition-colors duration-300" href="order_slots.html">Order</a>
+
+
 </div>
-<button class="bg-primary text-on-primary px-6 py-2 rounded font-['Space_Grotesk'] font-bold uppercase tracking-widest scale-95 duration-200 ease-in-out hover:scale-100 shadow-[0_0_20px_rgba(204,255,0,0.3)]">
+<a href="order_slots.html"><button class="bg-primary text-on-primary px-6 py-2 rounded font-['Space_Grotesk'] font-bold uppercase tracking-widest scale-95 duration-200 ease-in-out hover:scale-100 shadow-[0_0_20px_rgba(92,184,92,0.3)]">
             Order Now
-        </button>
+        </button></a>
 </div>
 </nav>
 <!-- Hero Section -->
@@ -118,7 +121,7 @@
 <div class="max-w-4xl">
 <h1 class="font-headline text-6xl md:text-8xl font-black tracking-tighter leading-none mb-6">THE <span class="text-primary neon-glow-text">HOME</span> <br/>OF FLAVOR</h1>
 <p class="font-body text-xl text-on-surface-variant max-w-xl leading-relaxed">
-                Small plates, big soul. Experience the fusion of traditional African hearth-cooking with modern culinary artistry.
+                Experience the fusion of traditional African hearth-cooking with modern culinary artistry.
             </p>
 </div>
 </div>
@@ -128,7 +131,7 @@
 <!-- Menu Categories Navigation -->
 <div class="sticky top-[72px] z-40 bg-surface/80 backdrop-blur-md py-6">
 <div class="container mx-auto px-6 overflow-x-auto no-scrollbar flex space-x-4">
-<button class="px-8 py-3 rounded-full bg-primary text-on-primary font-headline font-bold whitespace-nowrap shadow-[0_0_15px_rgba(204,255,0,0.2)]">All Items</button>
+<button class="px-8 py-3 rounded-full bg-primary text-on-primary font-headline font-bold whitespace-nowrap shadow-[0_0_15px_rgba(92,184,92,0.2)]">All Items</button>
 <button class="px-8 py-3 rounded-full bg-surface-container-high hover:bg-surface-container-highest transition-colors font-headline font-bold whitespace-nowrap">Beef</button>
 <button class="px-8 py-3 rounded-full bg-surface-container-high hover:bg-surface-container-highest transition-colors font-headline font-bold whitespace-nowrap">Pork</button>
 <button class="px-8 py-3 rounded-full bg-surface-container-high hover:bg-surface-container-highest transition-colors font-headline font-bold whitespace-nowrap">Lamb &amp; Goat</button>
@@ -152,7 +155,7 @@
 <!-- Large Featured Item -->
 <div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low p-8 border border-white/5 flex flex-col justify-end min-h-[500px]">
 <div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" data-alt="Succulent smoked brisket with dark charred bark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0gulwq3NAazE1zAl6L9Dx5CS4kKiL-oUNe3dk0CU1iWaIGD0Und4VcYjo_8a4HWjWLk8qTIMtebGIWhECUYmOgg7VE01zdqlNIvf01KHlIINndUFq2_Mj_STWFPuYFS910kkE6ZHB9EOMsOzOsSof_cTJUPR8eMuHig3tT4deulCzVBt1MirSKbljru2tpb_RypkaRug0GCAA62g65bwoG9JHJ7ScuoeFkW93Ab8Mpg4dTSNhiXW6xJnH4dd6U2ax5C9wwDMVPAw"/>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" data-alt="Succulent smoked brisket with dark charred bark" src="pexels-haydenplus1-9397270.jpg"/>
 <div class="absolute inset-0 smoke-overlay"></div>
 </div>
 <div class="relative z-10">
@@ -160,7 +163,7 @@
 <h3 class="font-headline text-5xl font-black mb-2">Heritage Smoked Brisket</h3>
 <p class="text-on-surface-variant max-w-lg mb-6 leading-relaxed">14-hour slow-smoked wagyu brisket, rubbed with our signature Kalahari spice blend and glazed with a honey-tamarind jus.</p>
 <div class="flex items-center justify-between">
-<span class="text-3xl font-headline font-bold text-primary neon-glow-text">R28.00</span>
+<span class="text-3xl font-headline font-bold text-primary neon-glow-text">R200.00</span>
 <button class="flex items-center gap-2 bg-white/10 backdrop-blur-md hover:bg-primary hover:text-on-primary transition-all px-8 py-4 rounded font-headline font-black uppercase tracking-tighter">
 <span class="material-symbols-outlined">add_shopping_cart</span>
                             Add to Order
@@ -173,13 +176,13 @@
 <div class="group relative overflow-hidden rounded-xl bg-surface-container p-6 border border-white/5">
 <div class="flex gap-4">
 <div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="Spicy peri peri chicken wings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0gulwq3NAazE1zAl6L9Dx5CS4kKiL-oUNe3dk0CU1iWaIGD0Und4VcYjo_8a4HWjWLk8qTIMtebGIWhECUYmOgg7VE01zdqlNIvf01KHlIINndUFq2_Mj_STWFPuYFS910kkE6ZHB9EOMsOzOsSof_cTJUPR8eMuHig3tT4deulCzVBt1MirSKbljru2tpb_RypkaRug0GCAA62g65bwoG9JHJ7ScuoeFkW93Ab8Mpg4dTSNhiXW6xJnH4dd6U2ax5C9wwDMVPAw"/>
+<img class="w-full h-full object-cover" data-alt="Spicy peri peri chicken wings" src="C:\Users\Tondwani Craig\Desktop\Afrika's Tapas\nobleseed-nobleseed-oND5KB8Kq80-unsplash (1).jpg"/>
 </div>
 <div>
-<h4 class="font-headline font-bold text-xl mb-1">Flame-Kissed Ribs</h4>
+<h4 class="font-headline font-bold text-xl mb-1">Smoked Pork Ribs</h4>
 <p class="text-sm text-on-surface-variant mb-4">Sticky pomegranate &amp; chili glaze.</p>
 <div class="flex items-center justify-between">
-<span class="font-headline font-bold text-primary">R18</span>
+<span class="font-headline font-bold text-primary">R210.00</span>
 <button class="p-2 rounded-full bg-surface-container-highest hover:bg-primary hover:text-on-primary transition-colors text-primary hover:text-on-primary">
 <span class="material-symbols-outlined">add</span>
 </button>
@@ -193,10 +196,10 @@
 <img class="w-full h-full object-cover" data-alt="Grilled lamb skewers with herbs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0gulwq3NAazE1zAl6L9Dx5CS4kKiL-oUNe3dk0CU1iWaIGD0Und4VcYjo_8a4HWjWLk8qTIMtebGIWhECUYmOgg7VE01zdqlNIvf01KHlIINndUFq2_Mj_STWFPuYFS910kkE6ZHB9EOMsOzOsSof_cTJUPR8eMuHig3tT4deulCzVBt1MirSKbljru2tpb_RypkaRug0GCAA62g65bwoG9JHJ7ScuoeFkW93Ab8Mpg4dTSNhiXW6xJnH4dd6U2ax5C9wwDMVPAw"/>
 </div>
 <div>
-<h4 class="font-headline font-bold text-xl mb-1">Karoo Lamb Lollipops</h4>
-<p class="text-sm text-on-surface-variant mb-4">Mint-cilantro gremolata.</p>
+<h4 class="font-headline font-bold text-xl mb-1">AT Smoke Box</h4>
+<p class="text-sm text-on-surface-variant mb-4">2 Signature Meats, 2 Sides & Signature Sauce</p>
 <div class="flex items-center justify-between">
-<span class="font-headline font-bold text-primary">R24</span>
+<span class="font-headline font-bold text-primary">R350</span>
 <button class="p-2 rounded-full bg-surface-container-highest hover:bg-primary hover:text-on-primary transition-colors text-primary hover:text-on-primary">
 <span class="material-symbols-outlined">add</span>
 </button>
@@ -237,7 +240,7 @@
 </div>
 </div>
 <!-- Box 2 (Featured) -->
-<div class="group relative bg-surface-container-high border-2 border-primary/30 rounded-2xl p-8 transition-all hover:border-primary overflow-hidden shadow-[0_0_40px_rgba(204,255,0,0.05)]">
+<div class="group relative bg-surface-container-high border-2 border-primary/30 rounded-2xl p-8 transition-all hover:border-primary overflow-hidden shadow-[0_0_40px_rgba(92,184,92,0.05)]">
 <div class="absolute top-0 right-0 p-4">
 <span class="text-xs font-bold tracking-widest bg-primary text-on-primary uppercase px-3 py-1 rounded-full shadow-lg">3–4 People</span>
 </div>
@@ -277,30 +280,54 @@
 </div>
 </section>
 <!-- Main Grid Sections -->
-<section class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<section class="space-y-16">
 <!-- Beef Section -->
 <div>
 <h3 class="font-headline text-3xl font-bold mb-8 flex items-center gap-4">
 <span class="w-8 h-[2px] bg-primary"></span> Beef
             </h3>
-<div class="space-y-4">
-<!-- Item -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+    <!-- Item -->
 <div class="p-6 rounded-xl bg-surface-container-low border border-white/5 flex justify-between items-center group">
 <div>
-<h5 class="font-headline font-bold text-lg">Biltong-Spiced Carpaccio</h5>
-<p class="text-on-surface-variant text-sm">Truffle mayo, caper berries, crispy onions.</p>
-<span class="text-primary font-bold mt-2 block">R16.50</span>
+<h5 class="font-headline font-bold text-lg">Smoked Brisket</h5>
+<p class="text-on-surface-variant text-sm">Pulled or Sliced, rich and juicy</p>
+<span class="text-primary font-bold mt-2 block">R200.00</span>
 </div>
 <button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
 <span class="material-symbols-outlined">add</span>
 </button>
 </div>
 <!-- Item -->
+<!-- Item -->
 <div class="p-6 rounded-xl bg-surface-container-low border border-white/5 flex justify-between items-center group">
 <div>
-<h5 class="font-headline font-bold text-lg">Suya Steak Bites</h5>
-<p class="text-on-surface-variant text-sm">Spicy peanut rub, pickled red onions.</p>
-<span class="text-primary font-bold mt-2 block">R19.00</span>
+<h5 class="font-headline font-bold text-lg">Beef Short Ribs</h5>
+<p class="text-on-surface-variant text-sm">Thick-cut, sticky bark, deep smoke.</p>
+<span class="text-primary font-bold mt-2 block">R220.00</span>
+</div>
+<button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<!-- Item -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-white/6 flex justify-between items-center group">
+<div>
+<h5 class="font-headline font-bold text-lg">Smoked Oxtail</h5>
+<p class="text-on-surface-variant text-sm">Fall-off-the-bone, smoked then braised</p>
+<span class="text-primary font-bold mt-2 block">R220.00</span>
+</div>
+<button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<!-- Item -->
+<!-- Item -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-white/5 flex justify-between items-center group">
+<div>
+<h5 class="font-headline font-bold text-lg">Smoked Beef Sausage</h5>
+<p class="text-on-surface-variant text-sm">Coarse grind,fire-kissed.</p>
+<span class="text-primary font-bold mt-2 block">R160.00</span>
 </div>
 <button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
 <span class="material-symbols-outlined">add</span>
@@ -313,13 +340,13 @@
 <h3 class="font-headline text-3xl font-bold mb-8 flex items-center gap-4">
 <span class="w-8 h-[2px] bg-primary"></span> Pork
             </h3>
-<div class="space-y-4">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
 <!-- Item -->
 <div class="p-6 rounded-xl bg-surface-container-low border border-white/5 flex justify-between items-center group">
 <div>
-<h5 class="font-headline font-bold text-lg">Braised Pork Belly</h5>
-<p class="text-on-surface-variant text-sm">Ginger-soy reduction, apple slaw.</p>
-<span class="text-primary font-bold mt-2 block">R17.00</span>
+<h5 class="font-headline font-bold text-lg">Smoked Pork Ribs</h5>
+<p class="text-on-surface-variant text-sm"> Dry-rubbed,glazed optional</p></p>
+<span class="text-primary font-bold mt-2 block">R210.00</span>
 </div>
 <button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
 <span class="material-symbols-outlined">add</span>
@@ -328,14 +355,140 @@
 <!-- Item -->
 <div class="p-6 rounded-xl bg-surface-container-low border border-white/5 flex justify-between items-center group">
 <div>
-<h5 class="font-headline font-bold text-lg">Boerewors Sliders</h5>
-<p class="text-on-surface-variant text-sm">Chakalaka relish, brioche bun.</p>
-<span class="text-primary font-bold mt-2 block">R15.00</span>
+<h5 class="font-headline font-bold text-lg">Smoked Pork Belly</h5>
+<p class="text-on-surface-variant text-sm">Crispy edges, melt-in-mouth centre</p>
+<span class="text-primary font-bold mt-2 block">R190.00</span>
 </div>
 <button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
 <span class="material-symbols-outlined">add</span>
 </button>
 </div>
+<!-- Item -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-white/5 flex justify-between items-center group">
+<div>
+<h5 class="font-headline font-bold text-lg">Pulled Pork</h5>
+<p class="text-on-surface-variant text-sm"> Vinegar bite, deep smoke</p></p>
+<span class="text-primary font-bold mt-2 block">R170.00</span>
+</div>
+<button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<!-- Item -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-white/5 flex justify-between items-center group">
+<div>
+<h5 class="font-headline font-bold text-lg">Smoked Pork Sausage</h5>
+<p class="text-on-surface-variant text-sm">Juciy, snappy seasoned casing</p>
+<span class="text-primary font-bold mt-2 block">R150.00</span>
+</div>
+<button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Chicken Section -->
+<div>
+<h3 class="font-headline text-3xl font-bold mb-8 flex items-center gap-4">
+<span class="w-8 h-[2px] bg-primary"></span> Chicken
+</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+<!-- Item -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-white/5 flex justify-between items-center group">
+<div>
+<h5 class="font-headline font-bold text-lg">Smoked Whole Chicken</h5>
+<p class="text-on-surface-variant text-sm">Herb-brined, skin on</p>
+<span class="text-primary font-bold mt-2 block">R180.00</span>
+</div>
+<button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<!-- Item -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-white/5 flex justify-between items-center group">
+<div>
+<h5 class="font-headline font-bold text-lg">Smoked Chicken Thighs</h5>
+<p class="text-on-surface-variant text-sm">Juicy, forgiving, crowd favourite</p>
+<span class="text-primary font-bold mt-2 block">R130.00</span>
+</div>
+<button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<!-- Item -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-white/5 flex justify-between items-center group">
+<div>
+<h5 class="font-headline font-bold text-lg">Smoked Chicken Wings</h5>
+<p class="text-on-surface-variant text-sm">Finsied hot or sticky</p>
+<span class="text-primary font-bold mt-2 block">R110.00</span>
+</div>
+<button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<!-- Item -->
+<!-- <div class="p-6 rounded-xl bg-surface-container-low border border-white/5 flex justify-between items-center group">
+<div>
+<h5 class="font-headline font-bold text-lg">Pulled Chicken</h5>
+<p class="text-on-surface-variant text-sm">Smoky, shredded, house smoke sauce</p>
+<span class="text-primary font-bold mt-2 block">R110.00</span>
+</div>
+<button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div> -->
+</div>
+</div>
+<!-- Lamb & Goat Section -->
+<div>
+<h3 class="font-headline text-3xl font-bold mb-8 flex items-center gap-4">
+<span class="w-8 h-[2px] bg-primary"></span> Lamb &amp; Goat
+</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+<!-- Item -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-white/5 flex justify-between items-center group">
+<div>
+<h5 class="font-headline font-bold text-lg">Smoked Lamb Ribs</h5>
+<p class="text-on-surface-variant text-sm"> Fat-foward, herb rub</p>
+<span class="text-primary font-bold mt-2 block">R290.00</span>
+</div>
+<button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<!-- Item -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-white/5 flex justify-between items-center group">
+<div>
+<h5 class="font-headline font-bold text-lg">Smoked Lamb Shoulder</h5>
+<p class="text-on-surface-variant text-sm">pulled, bold &amp; smoky</p>
+<span class="text-primary font-bold mt-2 block">R260.00</span>
+</div>
+<button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<!-- Item -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-white/5 flex justify-between items-center group">
+<div>
+<h5 class="font-headline font-bold text-lg">Smoked Goat Leg/Rib</h5>
+<p class="text-on-surface-variant text-sm">Earthy, slow-smoked, unapologetic</p>
+<span class="text-primary font-bold mt-2 block">R270.00</span>
+</div>
+<button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<!-- Item -->
+<!-- <div class="p-6 rounded-xl bg-surface-container-low border border-white/5 flex justify-between items-center group">
+<div>
+<h5 class="font-headline font-bold text-lg">Goat Chops</h5>
+<p class="text-on-surface-variant text-sm">Fire-charred, rosemary &amp; garlic rub</p>
+<span class="text-primary font-bold mt-2 block">R240.00</span>
+</div>
+<button class="bg-surface-container-highest text-primary p-3 rounded-xl opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div> -->
 </div>
 </div>
 </section>
@@ -397,21 +550,53 @@
 <!-- Sides -->
 <div>
 <h3 class="font-headline text-2xl font-bold mb-6 text-primary">Sides</h3>
-<div class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
 <div class="border-l-2 border-primary/20 pl-4 py-2 hover:border-primary transition-colors">
 <div class="flex justify-between items-start mb-1">
-<h6 class="font-bold">Jollof Arancini</h6>
-<span class="text-primary font-bold">R9</span>
+<h6 class="font-bold">Pap &amp; Smoky Tomato Relish</h6>
+<span class="text-primary font-bold">R45</span>
 </div>
-<p class="text-xs text-on-surface-variant leading-tight">Spiced rice balls, shito mayo.</p>
+<p class="text-xs text-on-surface-variant leading-tight">Creamy white maize pap, slow-cooked smoky tomato sheba.</p>
 <button class="mt-3 text-[10px] uppercase font-bold tracking-widest text-primary hover:underline">Add to Order</button>
 </div>
 <div class="border-l-2 border-primary/20 pl-4 py-2 hover:border-primary transition-colors">
 <div class="flex justify-between items-start mb-1">
-<h6 class="font-bold">Pap &amp; Gravy Fries</h6>
-<span class="text-primary font-bold">R8</span>
+<h6 class="font-bold">Chakalaka</h6>
+<span class="text-primary font-bold">R35</span>
 </div>
-<p class="text-xs text-on-surface-variant leading-tight">Crispy maize sticks, sheba sauce.</p>
+<p class="text-xs text-on-surface-variant leading-tight">Spiced bean &amp; vegetable relish, bold African heat.</p>
+<button class="mt-3 text-[10px] uppercase font-bold tracking-widest text-primary hover:underline">Add to Order</button>
+</div>
+<div class="border-l-2 border-primary/20 pl-4 py-2 hover:border-primary transition-colors">
+<div class="flex justify-between items-start mb-1">
+<h6 class="font-bold">Samp &amp; Beans</h6>
+<span class="text-primary font-bold">R50</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-tight">Slow-cooked umngqusho, rich and hearty.</p>
+<button class="mt-3 text-[10px] uppercase font-bold tracking-widest text-primary hover:underline">Add to Order</button>
+</div>
+<div class="border-l-2 border-primary/20 pl-4 py-2 hover:border-primary transition-colors">
+<div class="flex justify-between items-start mb-1">
+<h6 class="font-bold">Grilled Corn</h6>
+<span class="text-primary font-bold">R30</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-tight">Fire-charred mealies, seasoned butter &amp; chili salt.</p>
+<button class="mt-3 text-[10px] uppercase font-bold tracking-widest text-primary hover:underline">Add to Order</button>
+</div>
+<div class="border-l-2 border-primary/20 pl-4 py-2 hover:border-primary transition-colors">
+<div class="flex justify-between items-start mb-1">
+<h6 class="font-bold">Smoked Beans</h6>
+<span class="text-primary font-bold">R40</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-tight">Pit-smoked baked beans, molasses &amp; mustard base.</p>
+<button class="mt-3 text-[10px] uppercase font-bold tracking-widest text-primary hover:underline">Add to Order</button>
+</div>
+<div class="border-l-2 border-primary/20 pl-4 py-2 hover:border-primary transition-colors">
+<div class="flex justify-between items-start mb-1">
+<h6 class="font-bold">Atchar Potato Salad</h6>
+<span class="text-primary font-bold">R40</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-tight">Creamy potato salad, tangy mango atchar swirl.</p>
 <button class="mt-3 text-[10px] uppercase font-bold tracking-widest text-primary hover:underline">Add to Order</button>
 </div>
 </div>
@@ -448,13 +633,13 @@
 </main>
 <!-- Cart Floating Summary -->
 <div class="fixed bottom-8 right-8 z-50">
-<button class="bg-primary text-on-primary w-16 h-16 rounded-full shadow-[0_10px_30px_rgba(204,255,0,0.4)] flex items-center justify-center hover:scale-110 transition-transform group relative">
+<button class="bg-primary text-on-primary w-16 h-16 rounded-full shadow-[0_10px_30px_rgba(92,184,92,0.4)] flex items-center justify-center hover:scale-110 transition-transform group relative">
 <span class="material-symbols-outlined text-3xl">shopping_basket</span>
 <span class="absolute -top-1 -right-1 bg-white text-surface text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center border-2 border-surface">3</span>
 </button>
 </div>
 <!-- Footer -->
-<footer class="bg-[#131313] dark:bg-[#131313] w-full py-12 px-8 bg-gradient-to-t from-[#131313] to-surface-container-low mt-24">
+<footer class="bg-[#0c1f0c] dark:bg-[#0c1f0c] w-full py-12 px-8 bg-gradient-to-t from-[#0c1f0c] to-surface-container-low mt-24">
 <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 font-['Plus_Jakarta_Sans'] text-sm tracking-wide">
 <div class="text-lg font-bold text-primary neon-glow-text">Afrika's Tapas</div>
 <div class="flex gap-8 text-[#aecfae]/60">
